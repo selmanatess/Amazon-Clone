@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "555364811013",
+    "project_id": "clone-fb220",
+    "storage_bucket": "clone-fb220.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555364811013:android:e45d687cb28a28754d376c",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555364811013-4hcggb45qukb8itkoikrskj9rkh8k8ev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKxuqqaEHvwJQsSVVmv8rmWUlNScXqGQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555364811013-4hcggb45qukb8itkoikrskj9rkh8k8ev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
