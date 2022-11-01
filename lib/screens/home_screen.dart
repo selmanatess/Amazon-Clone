@@ -1,3 +1,4 @@
+import 'package:amazonclonee/model/user_details_model.dart';
 import 'package:amazonclonee/utils/constants.dart';
 import 'package:amazonclonee/widget/banner_ad_widget.dart';
 import 'package:amazonclonee/widget/categorieies_horizontal_list_view_bar.dart';
@@ -15,6 +16,24 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  ScrollController controller = ScrollController();
+  double offset = 0;
+  @override
+  void initState() {
+    super.initState();
+    controller.addListener(() {
+      setState(() {
+        offset = controller.position.pixels;
+      });
+    });
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    controller.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,8 +44,12 @@ class _HomeScreenState extends State<HomeScreen> {
         body: Stack(
           children: [
             SingleChildScrollView(
+              controller: controller,
               child: Column(
                 children: [
+                  SizedBox(
+                    height: kAppBarHeight / 2,
+                  ),
                   CategoriesHorizontalListview(),
                   BannerAdwidget(),
                   ProductsShowcaseListView(
@@ -40,7 +63,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-            UserdetailsBar(offset: 0)
+            UserdetailsBar(
+              offset: offset,
+              userDetailsModel: UserDetailModel(
+                  name: "Selman",
+                  adress: "Gaziler Mahallesi 315 Sokak no:15 KEPEZ/Antalya"),
+            )
           ],
         ));
   }

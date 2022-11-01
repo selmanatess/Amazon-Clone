@@ -35,6 +35,7 @@ class _SignInScreenState extends State<SignInScreen> {
     Size screensize = Utils().getScreenSize();
     return Scaffold(
       body: SingleChildScrollView(
+        //Kutunun içini kaydırır
         child: SizedBox(
           height: screensize.height,
           width: screensize.width,
