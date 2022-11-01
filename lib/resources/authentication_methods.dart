@@ -42,6 +42,7 @@ class Authenticationmethods {
     email.trim();
     password.trim();
     String output = "Bir şeyler yanlış gitti";
+    // ignore: avoid_print
     print(email);
     if (email != "" && password != "") {
       try {

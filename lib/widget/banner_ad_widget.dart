@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:amazonclonee/utils/color.themes.dart';
 import 'package:amazonclonee/utils/constants.dart';
 

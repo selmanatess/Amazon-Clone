@@ -19,8 +19,8 @@ const List<String> categoriesList = [
   "Kozmetik"
 ];
 const List<Widget> screens = [
-  HomeScreen(),
   accountScreen(),
+  HomeScreen(),
   Center(
     child: Text("Kart Ekran"),
   ),
@@ -63,58 +63,58 @@ const List<String> adItemNames = [
   "Faturanı Öde"
 ];
 List<Widget> sebzeMeyve = [
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url:
           "https://cdn.pixabay.com/photo/2021/01/05/05/30/grapes-5889697_960_720.jpg"),
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url:
           "https://cdn.pixabay.com/photo/2010/12/13/10/05/berries-2277_960_720.jpg"),
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url:
           "https://cdn.pixabay.com/photo/2016/08/11/08/04/vegetables-1584999_960_720.jpg"),
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url:
           "https://cdn.pixabay.com/photo/2015/03/14/14/00/carrots-673184_960_720.jpg"),
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url:
           "https://cdn.pixabay.com/photo/2016/05/16/22/47/onions-1397037__340.jpg"),
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url:
           "https://cdn.pixabay.com/photo/2016/02/17/19/14/peas-1205673_960_720.jpg"),
 ];
 List<Widget> evEsyasi = [
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url:
           "https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737_960_720.jpg"),
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url:
           "https://cdn.pixabay.com/photo/2016/03/27/07/12/apple-1282241_960_720.jpg"),
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url:
           "https://cdn.pixabay.com/photo/2016/11/19/15/32/laptop-1839876_960_720.jpg"),
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url: "https://m.media-amazon.com/images/I/11uufjN3lYL._SX90_SY90_.png"),
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url: "https://m.media-amazon.com/images/I/51QISbJp5-L._SX3000_.jpg"),
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url: "https://m.media-amazon.com/images/I/11uufjN3lYL._SX90_SY90_.png"),
 ];
 List<Widget> teknolojiAletleri = [
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url:
           "https://cdn.pixabay.com/photo/2022/02/21/06/47/applications-7025904_960_720.jpg"),
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url:
           "https://images.pexels.com/photos/4068317/pexels-photo-4068317.jpeg?cs=srgb&dl=pexels-cottonbro-4068317.jpg&fm=jpg&_gl=1*bnj6x6*_ga*MTg5NzU1OTcxMi4xNjY2NDMzODU1*_ga_8JE65Q40S6*MTY2NjQzMzg1Ni4xLjEuMTY2NjQzMzg3Ni4wLjAuMA.."),
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url:
           "https://images.pexels.com/photos/4740585/pexels-photo-4740585.jpeg?cs=srgb&dl=pexels-ksenia-chernaya-4740585.jpg&fm=jpg&_gl=1*p476d3*_ga*MTg5NzU1OTcxMi4xNjY2NDMzODU1*_ga_8JE65Q40S6*MTY2NjQzMzg1Ni4xLjEuMTY2NjQzNDAwOC4wLjAuMA.."),
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url:
           "https://images.pexels.com/photos/213162/pexels-photo-213162.jpeg?cs=srgb&dl=pexels-photomix-company-213162.jpg&fm=jpg&_gl=1*1xa78dg*_ga*MTg5NzU1OTcxMi4xNjY2NDMzODU1*_ga_8JE65Q40S6*MTY2NjQzMzg1Ni4xLjEuMTY2NjQzNDEyMi4wLjAuMA.."),
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url: "https://m.media-amazon.com/images/I/51QISbJp5-L._SX3000_.jpg"),
-  SimpleProductWidget(
+  const SimpleProductWidget(
       url: "https://m.media-amazon.com/images/I/11uufjN3lYL._SX90_SY90_.png"),
 ];
 
