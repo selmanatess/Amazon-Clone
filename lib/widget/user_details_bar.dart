@@ -8,7 +8,7 @@ class UserdetailsBar extends StatelessWidget {
   final double offset;
   final UserDetailModel userDetailsModel;
   const UserdetailsBar(
-      {Key? key, required this.offset, required this.userDetailsModel});
+      {super.key, required this.offset, required this.userDetailsModel});
 
   @override
   Widget build(BuildContext context) {
@@ -18,14 +18,14 @@ class UserdetailsBar extends StatelessWidget {
       child: Container(
         width: screensize.width,
         height: kAppBarHeight / 2,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             gradient: LinearGradient(
           colors: lightBackgroundaGradient,
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
         )),
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 3, horizontal: 20),
+          padding: const EdgeInsets.symmetric(vertical: 3, horizontal: 20),
           child: Row(children: [
             Padding(
               padding: const EdgeInsets.only(right: 10),

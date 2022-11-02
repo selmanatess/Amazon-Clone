@@ -3,18 +3,18 @@ import 'package:amazonclonee/utils/constants.dart';
 import 'package:amazonclonee/utils/utils.dart';
 import 'package:flutter/material.dart';
 
-class accountScreenAppBar extends StatefulWidget with PreferredSizeWidget {
+class AccountScreenAppBar extends StatefulWidget with PreferredSizeWidget {
   //Tercih Edilen Boyut, Appbar ile aynı yükseklik, genişlik, yükseklik ve his ile sizin için özel uygulama çubuğunuzu tasarlamanıza izin veren özel bir pencere öğesidir
   @override
   final Size preferredSize;
-  accountScreenAppBar({super.key})
-      : preferredSize = Size.fromHeight(kAppBarHeight);
+  AccountScreenAppBar({super.key})
+      : preferredSize = const Size.fromHeight(kAppBarHeight);
 
   @override
-  State<accountScreenAppBar> createState() => _accountScreenAppBarState();
+  State<AccountScreenAppBar> createState() => _AccountScreenAppBarState();
 }
 
-class _accountScreenAppBarState extends State<accountScreenAppBar> {
+class _AccountScreenAppBarState extends State<AccountScreenAppBar> {
   @override
   Widget build(BuildContext context) {
     Size screenSize = Utils().getScreenSize();
@@ -38,13 +38,13 @@ class _accountScreenAppBarState extends State<accountScreenAppBar> {
           children: [
             IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.notifications_outlined,
                   color: Colors.black,
                 )),
             IconButton(
                 onPressed: (() {}),
-                icon: Icon(
+                icon: const Icon(
                   Icons.search_outlined,
                   color: Colors.black,
                 ))

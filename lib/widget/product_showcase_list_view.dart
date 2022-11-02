@@ -15,8 +15,8 @@ class ProductsShowcaseListView extends StatelessWidget {
     double height = screensize.height / 4;
     double titleHeight = 30;
     return Container(
-        margin: EdgeInsets.all(8),
-        padding: EdgeInsets.all(8),
+        margin: const EdgeInsets.all(8),
+        padding: const EdgeInsets.all(8),
         height: height,
         width: screensize.width,
         color: Colors.white,
@@ -32,9 +32,9 @@ class ProductsShowcaseListView extends StatelessWidget {
                     style: const TextStyle(
                         fontSize: 17, fontWeight: FontWeight.bold),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 14),
-                    child: const Text(
+                  const Padding(
+                    padding: EdgeInsets.only(left: 14),
+                    child: Text(
                       "Daha fazla",
                       style: TextStyle(color: activeCyanColor),
                     ),

@@ -7,9 +7,12 @@ import 'package:flutter/material.dart';
 class SearchBarWidget extends StatelessWidget with PreferredSizeWidget {
   final bool isReadOnly;
   final bool hasBackButon;
-  const SearchBarWidget(
-      {required this.isReadOnly, required this.hasBackButon, Key? key})
-      : preferredSize = const Size.fromHeight(kAppBarHeight);
+  // ignore: use_key_in_widget_constructors
+  const SearchBarWidget({
+    Key? key,
+    required this.isReadOnly,
+    required this.hasBackButon,
+  }) : preferredSize = const Size.fromHeight(kAppBarHeight);
   @override
   final Size preferredSize;
   @override
@@ -17,7 +20,7 @@ class SearchBarWidget extends StatelessWidget with PreferredSizeWidget {
     Size screensize = Utils().getScreenSize();
     OutlineInputBorder border = OutlineInputBorder(
         borderRadius: BorderRadius.circular(7),
-        borderSide: BorderSide(color: Colors.grey, width: 2));
+        borderSide: const BorderSide(color: Colors.grey, width: 2));
     return Container(
       height: kAppBarHeight,
       decoration: const BoxDecoration(
@@ -37,7 +40,7 @@ class SearchBarWidget extends StatelessWidget with PreferredSizeWidget {
                     }),
                     icon: const Icon(Icons.arrow_back))
                 : Container(),
-            Container(
+            SizedBox(
               width: screensize.width * 0.7,
               child: Container(
                 decoration: BoxDecoration(boxShadow: [

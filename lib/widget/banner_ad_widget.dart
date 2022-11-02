@@ -11,9 +11,9 @@ class BannerAdwidget extends StatefulWidget {
 }
 
 class _BannerAdwidgetState extends State<BannerAdwidget> {
-  @override
   int currentAd = 0;
 
+  @override
   Widget build(BuildContext context) {
     Size screensize = MediaQuery.of(context)
         .size; //belli bir sınıfımn ekran ölçülerini alma için kullanılır
@@ -95,7 +95,7 @@ Widget getSmallAdsFromIndex(int index, double height) {
           mainAxisSize: MainAxisSize.min,
           children: [
             Image.network(smallAds[index]),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Text(adItemNames[index])

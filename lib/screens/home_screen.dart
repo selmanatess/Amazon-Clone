@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: SearchBarWidget(
+        appBar: const SearchBarWidget(
           isReadOnly: true,
           hasBackButon: false,
         ),
@@ -47,11 +47,11 @@ class _HomeScreenState extends State<HomeScreen> {
               controller: controller,
               child: Column(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: kAppBarHeight / 2,
                   ),
-                  CategoriesHorizontalListview(),
-                  BannerAdwidget(),
+                  const CategoriesHorizontalListview(),
+                  const BannerAdwidget(),
                   ProductsShowcaseListView(
                       title: "Sebze ve Meyvelerde %70'e varan indirim",
                       children: sebzeMeyve),

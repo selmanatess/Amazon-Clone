@@ -103,6 +103,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                   isLoading = false;
                                 });
                                 if (output == "Giriş başarılı") {
+                                  // ignore: use_build_context_synchronously
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(

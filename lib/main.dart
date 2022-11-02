@@ -1,5 +1,5 @@
 import 'package:amazonclonee/layout/screen_layout.dart';
-import 'package:amazonclonee/screens/home_screen.dart';
+
 import 'package:amazonclonee/screens/sign_in_screen.dart';
 
 import 'package:amazonclonee/utils/color.themes.dart';
