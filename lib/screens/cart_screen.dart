@@ -1,5 +1,7 @@
 import 'package:amazonclonee/model/user_details_model.dart';
+import 'package:amazonclonee/screens/account.screen.dart';
 import 'package:amazonclonee/utils/color.themes.dart';
+import 'package:amazonclonee/widget/card_item_widgets.dart';
 import 'package:amazonclonee/widget/costum_main_button.dart';
 import 'package:amazonclonee/widget/search_bar_widget.dart';
 import 'package:amazonclonee/widget/user_details_bar.dart';
@@ -37,6 +39,13 @@ class _CardScreenState extends State<CardScreen> {
                 color: yellowColor,
                 isLoading: false,
                 onPressed: (() {})),
+          ),
+          Expanded(
+            child: ListView.builder(
+                itemCount: 5,
+                itemBuilder: ((context, index) {
+                  return Carditemwidget();
+                })),
           )
         ],
       )),
