@@ -1,4 +1,5 @@
 import 'package:amazonclonee/screens/account.screen.dart';
+import 'package:amazonclonee/screens/cart_screen.dart';
 import 'package:amazonclonee/screens/home_screen.dart';
 import 'package:amazonclonee/widget/simple_product_widget.dart';
 import 'package:flutter/material.dart';
@@ -19,11 +20,9 @@ const List<String> categoriesList = [
   "Kozmetik"
 ];
 const List<Widget> screens = [
+  CardScreen(),
   accountScreen(),
   HomeScreen(),
-  Center(
-    child: Text("Kart Ekran"),
-  ),
   Center(
     child: Text("Daha Fazla Ekran"),
   )
@@ -121,3 +120,31 @@ List<Widget> teknolojiAletleri = [
 //Dont even attemp to scroll to the end of this manually lmao
 const String amazonLogo =
     "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png";
+
+List<Widget> siparislerim = [
+  const SimpleProductWidget(
+      url:
+          "https://cdn.pixabay.com/photo/2022/10/31/17/31/copper-teapots-7560392_960_720.jpg"),
+  const SimpleProductWidget(
+      url:
+          "https://cdn.pixabay.com/photo/2020/01/14/09/51/wine-glass-4764613_960_720.jpg"),
+  const SimpleProductWidget(
+      url:
+          "https://cdn.pixabay.com/photo/2017/08/17/08/20/online-shopping-2650383_960_720.jpg"),
+  const SimpleProductWidget(
+      url:
+          "https://cdn.pixabay.com/photo/2015/03/14/14/00/carrots-673184_960_720.jpg"),
+  const SimpleProductWidget(
+      url:
+          "https://cdn.pixabay.com/photo/2016/05/16/22/47/onions-1397037__340.jpg"),
+  const SimpleProductWidget(
+      url:
+          "https://cdn.pixabay.com/photo/2016/02/17/19/14/peas-1205673_960_720.jpg"),
+];
+List<String> tammalanansiparisler = [
+  "Çaydanlık",
+  "Bardak",
+  "Çanta",
+  "Telefon",
+  "Bilgisayar"
+];
