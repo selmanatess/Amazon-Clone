@@ -15,6 +15,7 @@ class CardScreen extends StatefulWidget {
 }
 
 class _CardScreenState extends State<CardScreen> {
+  double offset = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,21 +26,14 @@ class _CardScreenState extends State<CardScreen> {
       body: Center(
           child: Column(
         children: [
-          UserdetailsBar(
-              offset: 0,
-              userDetailsModel:
-                  UserDetailModel(name: "Selman", adress: "Antalya /KEPEZ")),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: CostumMainButton(
-                child: Text(
-                  "Öğe Tarafından işlendi",
-                  style: TextStyle(color: Colors.black),
-                ), //proceed to by items
-                color: yellowColor,
-                isLoading: false,
-                onPressed: (() {})),
-          ),
+          CostumMainButton(
+              child: Text(
+                "Öğe Tarafından işlendi",
+                style: TextStyle(color: Colors.black),
+              ), //proceed to by items
+              color: yellowColor,
+              isLoading: false,
+              onPressed: (() {})),
           Expanded(
             child: ListView.builder(
                 itemCount: 5,
