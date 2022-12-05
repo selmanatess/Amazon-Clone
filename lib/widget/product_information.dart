@@ -24,6 +24,15 @@ class productInformationWidget extends StatelessWidget {
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            Text(
+              productName,
+              maxLines: 2,
+              style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 15,
+                  letterSpacing: 0.9,
+                  overflow: TextOverflow.ellipsis),
+            ),
             Align(
               alignment: Alignment.topLeft,
               child: Text(
