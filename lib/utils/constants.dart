@@ -1,6 +1,7 @@
 import 'package:amazonclonee/screens/account.screen.dart';
 import 'package:amazonclonee/screens/cart_screen.dart';
 import 'package:amazonclonee/screens/home_screen.dart';
+import 'package:amazonclonee/screens/more_screen.dart';
 import 'package:amazonclonee/widget/simple_product_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -20,12 +21,10 @@ const List<String> categoriesList = [
   "Kozmetik"
 ];
 const List<Widget> screens = [
-  CardScreen(),
-  accountScreen(),
   HomeScreen(),
-  Center(
-    child: Text("Daha Fazla Ekran"),
-  )
+  accountScreen(),
+  CardScreen(),
+  moreScreen(),
 ];
 
 const List<String> categoryLogos = [
