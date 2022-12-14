@@ -24,23 +24,27 @@ class _CardScreenState extends State<CardScreen> {
         isReadOnly: true,
       ),
       body: Center(
-          child: Column(
+          child: Stack(
         children: [
-          CostumMainButton(
-              child: Text(
-                "Öğe Tarafından işlendi",
-                style: TextStyle(color: Colors.black),
-              ), //proceed to by items
-              color: yellowColor,
-              isLoading: false,
-              onPressed: (() {})),
-          Expanded(
-            child: ListView.builder(
-                itemCount: 5,
-                itemBuilder: ((context, index) {
-                  return Carditemwidget();
-                })),
-          )
+          Column(
+            children: [
+              CostumMainButton(
+                  child: Text(
+                    "Öğe Tarafından işlendi",
+                    style: TextStyle(color: Colors.black),
+                  ), //proceed to by items
+                  color: yellowColor,
+                  isLoading: false,
+                  onPressed: (() {})),
+              Expanded(
+                child: ListView.builder(
+                    itemCount: 5,
+                    itemBuilder: ((context, index) {
+                      return Carditemwidget();
+                    })),
+              )
+            ],
+          ),
         ],
       )),
     );

@@ -46,7 +46,7 @@ class ResultScreen extends StatelessWidget {
                         child: ResultsWidget(
                             product: ProductModel(
                                 url:
-                                    "https://cdn.pixabay.com/photo/2022/11/01/20/36/cat-7563332_640.png",
+                                    "https://cdn.pixabay.com/photo/2015/09/05/22/33/office-925806_960_720.jpg",
                                 cost: 45000,
                                 discount: 0,
                                 noOfRating: 1,

@@ -1,10 +1,7 @@
-import 'package:amazonclonee/layout/screen_layout.dart';
-import 'package:amazonclonee/screens/result_screen.dart';
-
+import 'package:amazonclonee/model/product_model.dart';
+import 'package:amazonclonee/screens/product.screen.dart';
 import 'package:amazonclonee/screens/sign_in_screen.dart';
-
 import 'package:amazonclonee/utils/color.themes.dart';
-import 'package:amazonclonee/widget/result_widget.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -49,7 +46,19 @@ class AmazonClone extends StatelessWidget {
                 ),
               );
             } else if (user.hasData) {
-              return const ScreenLayout();
+              //return const ScreenLayout();
+              return ProductScreen(
+                  productModel: ProductModel(
+                      url:
+                          "https://cdn.pixabay.com/photo/2015/09/05/22/33/office-925806_960_720.jpg",
+                      cost: 45000,
+                      discount: 0,
+                      noOfRating: 1,
+                      rating: 3,
+                      productName: "Mackbook Bilgisayar",
+                      sellerName: "Bahri DOĞRU",
+                      sellerUid: "31",
+                      uid: "31"));
             } else {
               return const SignInScreen();
             }

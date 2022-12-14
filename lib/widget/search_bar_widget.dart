@@ -52,6 +52,12 @@ class SearchBarWidget extends StatelessWidget with PreferredSizeWidget {
                       offset: const Offset(0, 5)),
                 ]),
                 child: TextField(
+                  onSubmitted: (String query) {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ResultScreen(query: query)));
+                  },
                   readOnly: isReadOnly,
                   onTap: () {
                     if (isReadOnly) {
