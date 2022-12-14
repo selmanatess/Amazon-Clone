@@ -12,7 +12,7 @@ class Carditemwidget extends StatelessWidget {
   Widget build(BuildContext context) {
     Size screensize = Utils().getScreenSize();
     return Padding(
-      padding: const EdgeInsets.all(40.0),
+      padding: const EdgeInsets.all(29.0),
       child: Container(
         height: screensize.height / 2,
         width: screensize.width,
@@ -37,7 +37,7 @@ class Carditemwidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    productInformationWidget(
+                    ProductInformationWidget(
                         cost: 100,
                         productName:
                             "Tatillerin vazgeçilmezi parmak arası deniz terliği",

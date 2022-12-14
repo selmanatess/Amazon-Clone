@@ -1,9 +1,11 @@
+import 'package:amazonclonee/screens/sign_in_screen.dart';
 import 'package:amazonclonee/utils/color.themes.dart';
 import 'package:amazonclonee/utils/constants.dart';
 import 'package:amazonclonee/utils/utils.dart';
 import 'package:amazonclonee/widget/account_screen_app_bar.dart';
 import 'package:amazonclonee/widget/costum_main_button.dart';
 import 'package:amazonclonee/widget/product_showcase_list_view.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
@@ -33,12 +35,20 @@ class _accountScreenState extends State<accountScreen> {
                 padding: const EdgeInsets.all(8.0),
                 child: CostumMainButton(
                     child: Text(
-                      "Giriş Yap",
+                      "Çıkış Yap",
                       style: TextStyle(color: Colors.black),
                     ),
                     color: Colors.orange,
                     isLoading: false,
-                    onPressed: (() {})),
+                    onPressed: (() {
+                      Future<void> _signOut() async {
+                        await FirebaseAuth.instance.signOut();
+                      }
+
+                      _signOut();
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (ctxt) => SignInScreen()));
+                    })),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),

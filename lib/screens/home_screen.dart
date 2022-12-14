@@ -48,10 +48,10 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Column(
                 children: [
                   const SizedBox(
-                    height: kAppBarHeight / 2,
+                    height: kAppBarHeight / 3,
                   ),
                   const CategoriesHorizontalListview(),
-                  const BannerAdwidget(),
+                  const AdBannerWidget(),
                   ProductsShowcaseListView(
                       title: "Sebze ve Meyvelerde %70'e varan indirim",
                       children: sebzeMeyve),

@@ -1,8 +1,10 @@
 import 'package:amazonclonee/layout/screen_layout.dart';
+import 'package:amazonclonee/screens/result_screen.dart';
 
 import 'package:amazonclonee/screens/sign_in_screen.dart';
 
 import 'package:amazonclonee/utils/color.themes.dart';
+import 'package:amazonclonee/widget/result_widget.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -20,8 +22,9 @@ void main() async {
             messagingSenderId: "555364811013",
             appId: "1:555364811013:web:9b6d542904681cf04d376c"));
   } else {
-    Firebase.initializeApp();
+    await Firebase.initializeApp();
   }
+
   runApp(const AmazonClone());
 }
 

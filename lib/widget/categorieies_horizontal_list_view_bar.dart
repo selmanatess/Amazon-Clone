@@ -8,7 +8,7 @@ class CategoriesHorizontalListview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: kAppBarHeight,
+      height: kAppBarHeight + 20,
       width: double.infinity,
       color: Colors.white,
       child: ListView.builder(

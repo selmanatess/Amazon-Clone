@@ -34,6 +34,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
     passwordController.dispose();
   }
 
+  @override
+  void setState(VoidCallback fn) {
+    super.setState(fn);
+  }
+
   Size screensize = Utils().getScreenSize();
   @override
   Widget build(BuildContext context) {
@@ -52,7 +57,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     Image.network(amazonLogo, height: screensize.height * 0.1),
                     Container(
                       padding: const EdgeInsets.all(25),
-                      height: screensize.height * 0.54,
+                      height: screensize.height * 0.74,
                       width: screensize.width * 0.75,
                       decoration: BoxDecoration(
                           border: Border.all(

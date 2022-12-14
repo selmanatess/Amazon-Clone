@@ -1,3 +1,4 @@
+import 'package:amazonclonee/screens/result_screen.dart';
 import 'package:amazonclonee/screens/search_screen.dart';
 import 'package:amazonclonee/utils/color.themes.dart';
 import 'package:amazonclonee/utils/constants.dart';

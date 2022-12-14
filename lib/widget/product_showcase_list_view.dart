@@ -30,7 +30,7 @@ class ProductsShowcaseListView extends StatelessWidget {
                   Text(
                     title,
                     style: const TextStyle(
-                        fontSize: 17, fontWeight: FontWeight.bold),
+                        fontSize: 15, fontWeight: FontWeight.bold),
                   ),
                   const Padding(
                     padding: EdgeInsets.only(left: 14),
